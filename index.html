@@ -182,6 +182,16 @@
     <script>
         // Dados com Histórico
         let companies = [
+
+            {
+                name: "Cantinho Romrom",
+                symbol: "CARO012",
+                logo: null,
+                price: 1.00,
+                variation: 0.0,
+                color: "#f97316",
+                history: [1]
+            },
             {
                 name: "Clara Confeitaria Fina",
                 symbol: "CLAC006",
@@ -205,7 +215,7 @@
             {
                 name: "Cya Wear",
                 symbol: "CYWE010",
-                logo: null,
+                logo: "https://raw.githubusercontent.com/proflourenco/adm-ptic/refs/heads/main/assets/Cya%20Wear/CYAWEARLOGO.png",
                 price: 1.00,
                 variation: 0.0,
                 color: "#ec4899",
@@ -250,7 +260,7 @@
             {
                 name: "Lavanda Lunar",
                 symbol: "LALU009",
-                logo: null,
+                logo: "https://raw.githubusercontent.com/proflourenco/adm-ptic/refs/heads/main/assets/Lavanda%20Lunar/LAVANDALUNALOGO.png",
                 price: 1.00,
                 variation: 0.0,
                 color: "#ec4899",
@@ -259,7 +269,7 @@
             {
                 name: "NaturalX",
                 symbol: "NATX011",
-                logo: null,
+                logo: "https://raw.githubusercontent.com/proflourenco/adm-ptic/refs/heads/main/assets/NaturalX/NATURALXLOGO.png",
                 price: 1.00,
                 variation: 0.0,
                 color: "#22c55e",
@@ -370,7 +380,7 @@
             const config = {
                 type: 'line',
                 data: {
-                    labels: ['Montagem da Empresa 04_03'],
+                    labels: ['Montagem da Empresa 04_03', "Manual da Empresa 11_03"],
                     datasets: [{
                         data: company.history,
                         borderColor: company.color,
